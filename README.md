@@ -170,3 +170,124 @@ Results :
 Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
 
 </pre>
+
+__BONUS__
+1. Can you add a second language (if you kno w a language other than English) Use the 
+rooster as a PoC for demonstrating this. For example, this is how the Rooster sounds 
+differently depending on language. Please add the rooster sound in your native tongue.
+<pre>
+Running com.singtel.data.test.RoosterTest
+I cannot fly
+Cock-a-doodle-doo
+I am walking
+kykyliky
+kukeleku
+kukko kiekuu
+cocorico
+kikeriki
+kikiriki
+coo- koo - ri-koo
+kukuriku
+chicchirichi
+ko - ke - kok - ko -o
+cucurucu
+kukareku
+kuckeliku
+kuk-kurri-kuuu
+kuklooku
+tik talaok
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+</pre>
+
+2. Can you design a RESTful API for querying these animals
+   __Please refer to the swagger.yaml for the API design__
+
+<pre>
+Request: GET http://localhost:8080/Singtel/Animals?type=Bird
+Response: 
+
+[{
+	"type": "Bird",
+	"walk": true,
+	"swim": false,
+	"fly": true,
+	"sing": true
+}]
+
+Request: GET http://localhost:8080/Singtel/Animals
+Response:
+[{
+	"type": "Bird",
+	"walk": true,
+	"swim": false,
+	"fly": true,
+	"sing": true
+}, {
+	"type": "Duck",
+	"walk": true,
+	"swim": true,
+	"fly": true,
+	"sing": true
+}, {
+	"type": "Chicken",
+	"walk": true,
+	"swim": false,
+	"fly": false,
+	"sing": true
+}, {
+	"type": "Rooster",
+	"walk": true,
+	"swim": false,
+	"fly": false,
+	"sing": true
+}, {
+	"type": "Parrot",
+	"walk": true,
+	"swim": false,
+	"fly": true,
+	"sing": true
+}, {
+	"type": "Shark",
+	"walk": false,
+	"swim": true,
+	"fly": false,
+	"sing": false
+}, {
+	"type": "ClownFish",
+	"walk": false,
+	"swim": true,
+	"fly": false,
+	"sing": false
+}, {
+	"type": "Dolphin",
+	"walk": false,
+	"swim": true,
+	"fly": false,
+	"sing": true
+}, {
+	"type": "Dog",
+	"walk": true,
+	"swim": true,
+	"fly": false,
+	"sing": true
+}, {
+	"type": "Butterfly",
+	"walk": false,
+	"swim": false,
+	"fly": true,
+	"sing": false
+}, {
+	"type": "Butterfly",
+	"walk": true,
+	"swim": false,
+	"fly": false,
+	"sing": false
+}, {
+	"type": "Cat",
+	"walk": true,
+	"swim": true,
+	"fly": false,
+	"sing": true
+}]
+
+</pre>
