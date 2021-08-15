@@ -1,5 +1,5 @@
 # Singtel
 
 __Prerequisites__
-Java
-Maven
+* Java
+* Maven
