@@ -11,6 +11,8 @@ __Instruction__
 4. execute __mvn clean install__
 
 __Example Output__
+
+<pre>
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
@@ -166,3 +168,5 @@ Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Results :
 
 Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
+
+</pre>
