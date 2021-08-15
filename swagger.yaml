@@ -1,0 +1,53 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Docomo Service
+host: localhost:8080
+basePath: /
+tags:
+  - name: animal-controller
+    description: Animal Controller
+paths:
+  /Singtel/Animals:
+    get:
+      tags:
+        - animal-controller
+      summary: getAnimals
+      operationId: getAnimalsUsingGET
+      produces:
+        - '*/*'
+      parameters:
+        - name: type
+          in: query
+          description: type
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AnimalResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+definitions:
+  AnimalResponse:
+    type: object
+    properties:
+      fly:
+        type: boolean
+      sing:
+        type: boolean
+      swim:
+        type: boolean
+      type:
+        type: string
+      walk:
+        type: boolean
+    title: AnimalResponse
