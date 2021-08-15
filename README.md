@@ -4,11 +4,13 @@ __Prerequisites__
 * Java
 * Maven
 
-__Instruction__
+__Instructions__
 1. Please check out the project repository
 2. Go to project directory
 3. Open a commandline
 4. execute __mvn clean install__
+
+__ClassDiagram.jpg__ - for the class Diagram
 
 __Example Output__
 
