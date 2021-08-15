@@ -22,7 +22,7 @@ public class Dog implements Animal {
 
 	@Override
 	public boolean swim() {
-		System.out.println("I can swim");
+		System.out.println("I'm swimming");
 		return true;
 	}
 
