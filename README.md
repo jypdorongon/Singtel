@@ -5,7 +5,7 @@ __Prerequisites__
 * Maven
 
 __Instruction__
-1 Please check out the project repository
-1 Go to project directory
-1 Open a commandline
-1 execute __mvn clean install__
+1. Please check out the project repository
+2. Go to project directory
+3. Open a commandline
+4. execute __mvn clean install__
